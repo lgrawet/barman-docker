@@ -1,11 +1,11 @@
 # docker-barman
 
 This repo contains files used to build a [docker](https://www.docker.com) image
-for running [BaRMan](https://github.com/2ndquadrant-it/barman), the "Backup and
+for running [BaRMan](https://github.com/EnterpriseDB/barman), the "Backup and
 Recovery Manager for PostgreSQL."
 
-It is easily used in conjunction with the `tbeadle/postgres:<version>-barman`
-images at https://hub.docker.com/r/tbeadle/postgres/.
+This repo is a fork of [ubc/barman-docker](https://github.com/ubc/barman-docker)
+mainly to provide updated software.
 
 ## Getting the image
 
