@@ -76,7 +76,7 @@ COPY barman.conf.template /etc/barman.conf.template
 COPY pg.conf.template /etc/barman/barman.d/pg.conf.template
 
 # Install barman exporter
-RUN pip install barman-exporter && mkdir /node_exporter
+RUN pip install --break-system-packages barman-exporter && mkdir /node_exporter
 VOLUME /node_exporter
 
 # Install the entrypoint script.  It will set up ssh-related things and then run
