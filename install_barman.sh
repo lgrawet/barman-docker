@@ -9,7 +9,6 @@ shopt -s nullglob
 #     basebackups from the database servers.
 # Install the barman cron job that ensures that pg_receivexlog is running for
 #     all of the database servers set to stream its WAL logs.
-wget -O - https://bootstrap.pypa.io/get-pip.py | python3 -
 # Requests isn't actually necessary, but it can be useful for barman hook scripts
 # for notification of the backup status.
 pip install --break-system-packages barman==${BARMAN_VERSION} requests==2.32.3

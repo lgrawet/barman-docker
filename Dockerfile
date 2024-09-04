@@ -36,10 +36,11 @@ RUN bash -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ bookworm-pgdg ma
 		postgresql-client-15 \
 		postgresql-client-16 \
 		python3 \
-        python3-distutils \
+		python3-pip \
+		python3-distutils \
 		rsync \
-        gettext-base \
-        procps \
+		gettext-base \
+		procps \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& rm -f /etc/crontab /etc/cron.*/* \
 	&& sed -i 's/\(.*pam_loginuid.so\)/#\1/' /etc/pam.d/cron \
